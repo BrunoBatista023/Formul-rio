@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário Clínica Estética</title>
+    <link rel="stylesheet" href="./fonte/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Agendamento de Serviços</h2>
+        <form id="appointment-form">
+            <label for="name">Nome:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Telefone:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="service">Serviço Desejado:</label>
+            <select id="service" name="service" required>
+                <option value="" disabled selected>Selecione um serviço</option>
+                <option value="facial">Limpeza de Pele Facial</option>
+                <option value="massage">Massagem Relaxante</option>
+                <option value="hair">Cuidado Capilar</option>
+            </select>
+
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="message"></div>
+    </div>
+    <script src="./fonte/script.js"></script>
+</body>
+</html>
